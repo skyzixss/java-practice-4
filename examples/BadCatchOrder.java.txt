@@ -1,0 +1,8 @@
+// Задание 18.3: намеренная ошибка компиляции (частный catch недостижим).
+class BadCatchOrder {
+    void demo() {
+        try { Integer.parseInt("Qwerty"); }
+        catch (Exception e) { System.out.println(e); }
+        catch (NumberFormatException e) { System.out.println(e); }
+    }
+}

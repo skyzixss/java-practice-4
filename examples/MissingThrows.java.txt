@@ -1,0 +1,7 @@
+// Задание 18.7: checked exception нужно объявить или обработать.
+class MissingThrows {
+    String getDetails(String key) {
+        if (key.isEmpty()) throw new Exception("Key set to empty string");
+        return "data for " + key;
+    }
+}
